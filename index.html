@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Imron - DevOps Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Orbitron", sans-serif;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        animation: glow 1.5s ease-in-out infinite alternate;
+      }
+
+      p {
+        font-size: 1.2rem;
+        opacity: 0.85;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+        }
+        to {
+          text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+        }
+      }
+
+      .badge {
+        background: #00ffcc;
+        color: #000;
+        padding: 5px 15px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        animation: bounce 1s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, Imron! 🚀</h1>
+    <p>Welcome to your DevOps HTML Page powered by <span class="badge">Jenkins</span> + <span class="badge">Docker</span> + <span class="badge">Kubernetes</span></p>
+  </body>
+</html>
