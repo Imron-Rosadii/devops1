@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: html-app
-          image: imron/html-app:latest
+          image: imronrosadii/html-app:latest
           ports:
             - containerPort: 80
